@@ -26970,12 +26970,12 @@
 "average_heartrate": 156.7,
 "average_speed": 2.532,
 "elevation_gain": 2.6,
+"source": "strava",
 "temperature_min": 6.8,
 "temperature_max": 6.8,
 "temperature_source": "open-meteo",
 "weather_code": 0,
 "weather_source": "open-meteo",
-"source": "strava",
 "best_efforts": [
 {
 "name": "400m",
@@ -26992,5 +26992,72 @@
 "best_efforts_version": 2,
 "device_watts": true,
 "streak": 228
+},
+{
+"run_id": 21104499668,
+"name": "\u53bb\u96c6\u5e02",
+"distance": 2326.4,
+"moving_time": "0:32:19",
+"type": "Hike",
+"start_date": "2026-11-24 03:14:17+00:00",
+"start_date_local": "2026-11-24 11:14:17",
+"location_country": "\u5317\u4eac\u822a\u7a7a\u822a\u5929\u5927\u5b66\uff08\u6c99\u6cb3\u6821\u533a\uff09, 9, \u9ad8\u6559\u56ed\u5357\u4e09\u8857, \u6c99\u6cb3\u9547, \u660c\u5e73\u533a, \u5317\u4eac\u5e02, 102206, \u4e2d\u56fd",
+"summary_polyline": "{patFanrdUBh@ILDNCFUJURw@X]Hu@\\i@N{Bv@IFGN?JDXAF]HUHGJDp@Nt@lBbMf@pC@b@L|ADHDP\\zBZpAj@pDTnAFr@AFWHMEM@CEAFMFwA`@ECKW_@HUTY?e@LEDAXMSAMKc@?KEQ@[Ie@?]@QAQu@aFQq@?SJWh@IXMbAWxBq@NK~@WLIFGu@oEa@aBUuAc@wCKc@]}CMq@GIEK?WNOx@Yj@Yl@OLGTATOPAN\\Dn@ZbB@^^dCJJNGH?TQ",
+"average_heartrate": 117.0,
+"average_speed": 1.2,
+"elevation_gain": 5.7,
+"temperature_min": 4.0,
+"temperature_max": 4.0,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
+"source": "strava",
+"streak": 229
+},
+{
+"run_id": 21104499653,
+"name": "\u5468\u4e8c\u4f8b\u8bad",
+"distance": 10363.1,
+"moving_time": "0:53:13",
+"type": "Run",
+"start_date": "2026-11-24 07:56:45+00:00",
+"start_date_local": "2026-11-24 15:56:45",
+"location_country": "\u8fd0\u52a8\u573a, \u5317\u6c99\u6cb3\u4e2d\u8def, \u5927\u738b\u5e84, \u6c99\u6cb3\u9547, \u660c\u5e73\u533a, \u5317\u4eac\u5e02, 102206, \u4e2d\u56fd",
+"summary_polyline": "m|`tFwzsdUS@AARCRCNGRQLWH[DYA]GYKQMOSKQEUAW?Q@Q@SBW@Q@W@WFOJQRIRETA\\@XFZLVPPRHTBV?TAV?PATCRARCPENINMLSHUDW@YAWIWOWMMSMU?U?W@W@Q@U@W@U@UDMJSPKXG\\?\\BVHZJPLLNJTBP?V?TAPAPATCRCTCPENKPSJ[FW@WAWI[OUQOUIUAU@U@U@U?U@WBUDQFOLMNIRGZAVBZFXNTPPRHT?T?VARATAVCTCTCPENMLQJYF[?]E[MWOSSKUES?WBS@U@U@U@U@UDSLMLIRITC^B\\FZLTRPRFT@TATAPAVAPATCRATGPMNUHWFY?]E[MYQQOIUEU@U@U@S@U?U@U@UDSLQRIPEZAV@\\HXLTRPPDT@T?TAR?TCTAP?TANMTGNOLWD[?_@EWEWKSOQQGSEU?SBU@SBU?U@U@SDSFQPMTIZCZ@XFXJVPPPJRBRATATATARARAR?VCRMLKNWJYB[AYE[KUQQSKWCQ@U@WBU@U@U@S@UBSJQNIVGZA\\BZJXLRPNRFT?T?TATATCRATCRATIPQLUHSD[A]G[ISQSSKSAS@U?UBWBU?Q@U@UBOHSPIPIXC\\@\\HXLTPNPFT@T?T?TCTCTARCTATGPMNQHWDY@[E[KWOSUKWCS?U@UBU@U@U@WBQDQHOLIRGXCZB^FTJPLNTJR?P?PATATATAVATCTERMPQFSF[@]E[IYQSOKQEU@W@S@U@UBU@W@UBOHOLKPIXC\\?\\FTLVNRPFT?RAT?TARAVCTATAVGPONSJYB[?]I[KWQOQISAS@S@WBQ@U@Q@Q@QBSBOJORMXC\\?ZD\\LVLLPJTDTAV?TATAVCTCTATGRMNUHSD[@[CWKYOSSOUCW@U@U@U@U@WBSBWDOFQPMVGZ?^D\\JVPRTLVDRATATCTATATATCTGRMNUJYDY@]IYKWQQSMUAW@U@U@U@U@UBU@WDOJORKXGZ@ZDZLXPRRJTBT?RCTAV?TCP?RAPCTKPSLWF[@WC_@KYKQSOSGQ?Q@U@U@W?UBS@U@WDSNOTKXCZ@ZFZHRLLRNTDV?TCTARATCTAVATCRKPUJWD]@[E[MYMOSOUAU?U@W@U@WBU@W@QBOHQPKPIZA\\BVFZJPRPTHTBTATCTATATAVATCTIPQJQHUBY?]E[KUSQSKUCU@U@UBU@S@W@W@UFOHQRKXE\\B\\FZJVPRTHTBTCT?TATCVAPCTCVERMJQHSDY@[E]KYQSSMQAW?U@U@UBU?W@UBQBUHMLMVGTAV@VDZLXJNTJPBT?VAVATARAVAVANEPINOJQFUD]AUE]ISMOMMWCWAU@Q@W@U@W@U@Q@QFSNOVGTCT@VBVFTLTNNTDT?T?TAT?TAVCTATCPGNGLWJYD]A]G]KUSQUIWAU?WBU@WBW@U@QBQDOJMNKXE\\?VBTFTNVRNVFR?VATATAVAPAPCTAPGRMJQJYBY@[E]KWQQSKWCU?W@WBQ@W@U@WBSDOJOLKVEVAT@VFZLVPRTHT@TAVATATCRAVATCVIRQHSH[BWA]G[OWQOQGW?Q?Q@Q@W@Q@Q@S@WBSFOLMPKTCX?VBVFTJRLLPHRBP?RAPARAPARARARARCRKNOJUFWBWA[EWIUOQSIQCS?UBS?S@S@S@S@SBWFOJSRIVEZ?ZDXJXNNTJRDTATARARATATARARCRGPMLSHYB[A[EYIUMOSKUCS?U@S@U?U@SBUBSBUFQNOTIXEZBZHXJTRLTJR@RATCRARARARAVABA",
+"average_heartrate": 146.3,
+"average_speed": 3.246,
+"elevation_gain": 2.6,
+"temperature_min": 5.1,
+"temperature_max": 6.5,
+"temperature_source": "open-meteo",
+"weather_code": 2,
+"weather_source": "open-meteo",
+"source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 101
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 258
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1497
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 3135
+}
+],
+"best_efforts_synced_at": "2026-11-25T00:17:30.316180+00:00",
+"best_efforts_version": 2,
+"device_watts": true,
+"streak": 229
 }
 ]
