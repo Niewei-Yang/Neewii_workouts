@@ -125,6 +125,33 @@ class StravaSyncRouteTest(unittest.TestCase):
         for kind in ("TrailRun", "Trail Run", "trail_running"):
             self.assertEqual(normalize_activity_type(kind), "Trail Run")
 
+    def test_sync_decodes_sport_type_from_strava_activity_list(self):
+        self.add_existing_activity("")
+        summary = {
+            "id": 123,
+            "name": "Morning activity",
+            "type": "Run",
+            "sport_type": "TrailRun",
+            "distance": 5000,
+            "moving_time": 1800,
+            "elapsed_time": 1800,
+            "start_date": "2026-07-20T11:00:00Z",
+            "start_date_local": "2026-07-20T19:00:00Z",
+        }
+        legacy_run = {k: v for k, v in summary.items() if k != "sport_type"}
+        activities = [
+            summary,
+            {**legacy_run, "id": 124},
+            {**summary, "id": 125, "type": "Ride", "sport_type": "GravelRide"},
+        ]
+        with patch.object(
+            self.generator.client.protocol, "get", return_value=activities
+        ):
+            self.generator.sync(force=False)
+
+        exported = {a["run_id"]: a["type"] for a in self.generator.loadForMapping()}
+        self.assertEqual(exported, {123: "Trail Run", 124: "Run", 125: "Ride"})
+
 
 if __name__ == "__main__":
     unittest.main()

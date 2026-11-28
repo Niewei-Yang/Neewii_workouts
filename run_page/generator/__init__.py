@@ -7,6 +7,7 @@ import stravalib
 from config import MAPPING_TYPE, run_map
 from gpxtrackposter import track_loader
 from sqlalchemy import func
+from stravalib.attributes import DETAILED, SUMMARY, Attribute
 
 from polyline_processor import filter_out
 from strava_streams import (
@@ -46,9 +47,21 @@ def _set_activity_polyline(activity, polyline_str):
         activity.map = run_map(polyline_str)
 
 
+class StravaActivitySummary(stravalib.model.Activity):
+    # stravalib 0.10.4 only deserializes fields declared on the model.
+    sport_type = Attribute(str, (SUMMARY, DETAILED))
+
+
+class StravaClient(stravalib.Client):
+    def get_activities(self, before=None, after=None, limit=None):
+        activities = super().get_activities(before=before, after=after, limit=limit)
+        activities.entity = StravaActivitySummary
+        return activities
+
+
 class Generator:
     def __init__(self, db_path):
-        self.client = stravalib.Client()
+        self.client = StravaClient()
         self.session = init_db(db_path)
 
         self.client_id = ""
@@ -101,6 +114,9 @@ class Generator:
                 getattr(activity, "sport_type", None) or activity.type
             )
             activity_type = normalize_activity_type(strava_activity_type)
+            if activity_type not in MAPPING_TYPE:
+                # Keep activities with unsupported subtypes in their existing category.
+                activity_type = normalize_activity_type(activity.type)
             if self.only_run and activity_type not in {"Run", "Trail Run"}:
                 continue
             incoming_polyline = _activity_polyline(activity)
